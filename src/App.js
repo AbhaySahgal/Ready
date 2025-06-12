@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import WelcomeScreen from './components/WelcomeScreen/WelcomeScreen';
+import QuestionScreen from './components/QuestionScreen/QuestionScreen';
+import { questions } from './data';
 
-function App() {
+export default function App() {
+  const [screen, setScreen] = useState('welcome');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen bg-gradient-to-br from-indigo-600 to-purple-800 flex items-center justify-center p-4 font-sans text-gray-100">
+      {screen === 'welcome'
+        ? <WelcomeScreen onContinue={() => setScreen('practice')} />
+        : <QuestionScreen questions={questions} />}
     </div>
   );
 }
-
-export default App;

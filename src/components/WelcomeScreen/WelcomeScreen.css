@@ -1,0 +1,100 @@
+/* Welcome Screen Container */
+
+.container {
+  flex: 1;
+  background: rgb(82, 58, 236); /* Soft purple tint */
+  min-height: 100vh; /* ensures full screen height */
+  display: flex;      /* center content vertically */
+  align-items: center;
+  justify-content: center;
+}
+
+
+.welcome-container {
+  background: rgba(255, 255, 255, 0.034);
+  min-height: 100%; /* ensures full screen height */
+  min-width: 80%;
+  backdrop-filter: blur(16px);
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.126);
+  padding: 2.5rem;
+  max-width: 560px;
+  width: 100%;
+  margin: 80px auto;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #f3f4f6;
+  animation: fadeSlideIn 0.8s ease-out;
+}
+
+/* Title */
+.welcome-title {
+  font-size: 2.75rem;
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  animation: fadeInDown 0.6s ease-out;
+}
+
+/* Description */
+.welcome-description {
+  font-size: 1.3rem;
+  color: #cbd5e1;
+  margin-bottom: 2.2rem;
+  line-height: 1.6;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Continue Button */
+.welcome-button {
+  padding: 0.9rem 2.2rem;
+  background: linear-gradient(to right, #10b981, #3b82f6); /* Emerald to Blue */
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.welcome-button:hover {
+  transform: scale(1.06);
+  box-shadow: 0 6px 24px rgba(59, 130, 246, 0.5);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-24px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95) translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}

@@ -1,0 +1,122 @@
+.container {
+  flex: 1;
+  background: rgb(82, 58, 236); /* Soft purple tint */
+  min-height: 100vh; /* ensures full screen height */
+  display: flex;      /* center content vertically */
+  align-items: center;
+  justify-content: center;
+}
+
+.qs-container {
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  padding: 24px;
+  /* max-width: 720px; */
+  width: 100%;
+  margin: 0 auto;
+  color: #f5f5f5;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); */
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.126);
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+}
+
+.qs-heading {
+  font-size: 1.75rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.qs-question-box {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.qs-question {
+  font-size: 1.125rem;
+  color: #e0e0e0;
+}
+
+.qs-toggle-button {
+  padding: 12px 24px;
+  background: linear-gradient(to right, #a855f7, #ec4899);
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  cursor: pointer;
+}
+
+.qs-solution-box {
+  position: relative;
+  background-color: #1f2937;
+  padding: 16px;
+  border-radius: 8px;
+  font-family: monospace;
+  font-size: 0.875rem;
+  color: #a7f3d0;
+  max-height: 256px;
+  overflow: auto;
+  margin-bottom: 24px;
+}
+
+.qs-code {
+  white-space: pre-wrap;
+}
+
+.qs-copy-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 8px;
+  background-color: #374151;
+  color: white;
+  font-size: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.qs-nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 16px;
+}
+
+.qs-prev-button,
+.qs-next-button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.qs-prev-button {
+  /* background-color: #374151; */
+  background-color: #6366f1;
+}
+
+.qs-next-button {
+  background-color: #6366f1;
+}
+
+/* Hide scrollbar for Chrome, Edge, Safari */
+.qs-solution-box::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.qs-solution-box {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
