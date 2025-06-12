@@ -14,7 +14,7 @@ export default function App() {
     fetch("https://reactnative.dev/movies.json")
       .then((response) => response.json())
       .then((json) => {
-        setData(json.movies); // `json.movies` is the correct data path
+        setData(json.movies);
         setLoading(false);
       })
       .catch((error) => {
