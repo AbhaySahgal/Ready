@@ -1,4 +1,4 @@
-// src/data/countercomponent.js
+// src/data/apifetchlist.js
 
 const apifetchlist = {
     id: 1,
