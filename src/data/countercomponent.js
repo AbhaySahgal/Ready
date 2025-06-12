@@ -1,4 +1,6 @@
-export default {
+// src/data/countercomponent.js
+
+const counterComponent = {
   id: 1,
   question: "Build a Counter Component, Create a component with increment/decrement buttons and display the count. Test state management using useState.",
   solution: `import React, { useState } from 'react';
@@ -44,5 +46,7 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Counter;`
+export default Counter;`,
 };
+
+export default counterComponent;
