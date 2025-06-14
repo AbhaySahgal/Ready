@@ -1,6 +1,6 @@
 import counterComponent from './countercomponent';
 import apifetchlist from './apifetchlist';
-import countercomponent from './countercomponent';
+import stylingwithflexbox from './stylingwithflexbox';
 
 
-export const questions = [counterComponent, apifetchlist, countercomponent];
+export const questions = [counterComponent, apifetchlist, stylingwithflexbox];
